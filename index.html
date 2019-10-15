@@ -1,0 +1,65 @@
+<!-- Anwar Hossain (w3cp) - 2017-06-10 - github.com/w3cp -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="green">
+    <meta name="description" content="About Me">
+    <meta name="author" content="Anwar Hossain (w3cp)">
+    <title>Game - coderanwar's Blog</title>
+    <!--Puzzle Game-->
+    <link rel="stylesheet" href="game/puzzle.css"/>
+
+    <style>
+        .button {
+            margin: 5px;
+            padding:10px;
+            border-radius:20px;
+        }
+        .bold {font-weight:bold;}
+        .bg-blue {background:#0099CC;color:#A8DFF4;}
+        .bg-green {background:green;color:lightgreen;}
+        .bg-red {background:#CC0000;color:#FFAFAF;}
+        .bg-yellow {background:#FF8A00;color:#FFECC0;}
+        .bg-pink {background:#E91E63;color:#FFAFAF;}
+        .bg-white {background:#fff;color:#0099CC;}
+    </style>
+</head>
+
+<body style="background:#eee;" onload="startTime()">
+    <div style="display:block;height:300px;text-align:center;">
+        <br>
+        <span class="bold button bg-green" id="changeImage"
+            onclick="changePuzzleImage('p')">
+            Previous
+        </span>
+        <span class="play-btn button bg-pink bold">
+            Reset/Jumble
+        </span>
+        <span class="bold button bg-green" id="changeImage"
+            onclick="changePuzzleImage('n')">
+            Next Pic
+        </span>
+        <br><br>
+        <span style="color:green;" id="succeed">[Succeed:] </span>
+        <span style="color:hotpink;" id="failed">[Failed:] </span>
+        <span style="color:#E91E63;" id="time">[Time:]</span>
+    </div>
+
+    <div class="game-container" style="width:100%;">
+        <div class="game" id="puzzle-game" style="margin-top:0;">
+            <div class="tab field-con">
+                <div class="field">
+                    <div class="img-con" id="puzzle-pic"></div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <!--Javascript Puzzle Game-->
+    <script src="game/array.js"></script>
+    <script src="game/puzzle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

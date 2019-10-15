@@ -1,0 +1,110 @@
+.game, .img-con, .field, .field-con, .tab, .img-con img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.2);
+    -webkit-user-select: none;
+
+    text-align: center;
+    color: #fff;
+    /*text-transform: uppercase;*/
+}
+
+.tab {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.field-con {
+    /*display: block;*/
+    padding-top: 10px;
+}
+
+.field {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.img-con {
+    width: 399px;
+    height: 399px;
+    position: relative;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+}
+
+.img-con img {
+    width: 133px;
+    height: 133px;
+    overflow: hidden;
+    float: left;
+    -webkit-tap-highlight-color: transparent;
+    padding: 1px;
+}
+
+.img-con.clear img {
+    padding: 0;
+}
+
+.img-con img.hide {
+    visibility: hidden;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1 }
+}
+
+/*Anwar*/
+/*.game-container {
+    height:500px;
+}
+
+@media (max-width: 480px) {
+    .game-container {
+        height:400px;
+    }
+    .img-con {
+        width: 300px;
+        height: 300px;
+    }
+    .img-con img {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+@media only screen and (orientation: landscape) {
+    .game-container {
+        height:500px;
+    }
+    .img-con {
+        width: 399px;
+        height: 399px;
+    }
+    .img-con img {
+        width: 133px;
+        height: 133px;
+    }
+
+}*/
+
+/*@media only screen and (min-width:600px) {
+    .game-container {
+        height:500px;
+    }
+    .img-con {
+        width: 375px;
+        height: 375px;
+    }
+    .img-con img {
+        width: 125px;
+        height: 125px;
+    }
+
+}*/
